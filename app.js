@@ -9,6 +9,9 @@ var search_input = document.querySelector(".search-Input");
 //We first take user input, that is the city entered by the user in the search bar.
 const takeUserInput = function () {
     var city = search_input.value;
+        if (city.trim() === "") {
+        alert("Error: City name cannot be empty!")
+    }
     getCityCurrentWeather(city);
 }
 
@@ -21,7 +24,7 @@ const getCityCurrentWeather = function (city) {
     fetch(api_url)
         .then(response => {
             if(!response.ok) {
-                alert("No weather available, check your input!");
+                alert("Error: No weather available, check your input!");
             }
             const responseFromApi = response.json();
             return responseFromApi;
