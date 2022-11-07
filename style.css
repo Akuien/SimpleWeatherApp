@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(32, 30, 30);
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    
+  }
+
+.Card{
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    text-align: center;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 450px;
+    margin: 1em;
+
+}
+
+.search-Input {
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  padding: 0.4em 1em;
+  border: none;
+  outline: none;
+  font-size: 105%;
+  border-radius: 24px;
+  width: calc(100% - 100px);
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 2.5em;
+  width: 2.5em;
+}
+
+button:hover {
+  background-color: rgb(39, 56, 3);
+}
+
+
